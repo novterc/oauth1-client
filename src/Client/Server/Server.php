@@ -130,6 +130,7 @@ abstract class Server
         $url = $this->getAuthorizationUrl($temporaryIdentifier);
 
         header('Location: '.$url);
+        die;
 
         return;
     }
